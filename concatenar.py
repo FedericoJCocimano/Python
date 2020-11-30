@@ -19,3 +19,17 @@ rango_seq = range(5) #range
 diccionario = {"nombre": "Mario", "edad": 23} #dict
 dato_byte = b"dato" #bytes
 print(type(nada))#Mostrar tipo de dato
+numero = str(85) #Convertir tipo de dato
+
+jugando = "Jugando \"al volley\"" #Barra invertida: alt + 92
+lugar = '"en la plaza"'
+print(jugando, lugar)
+
+texto_salto = jugando + "\n" + lugar #Salto de linea
+print(texto_salto)
+
+texto_tab = jugando + "\t" + lugar #Texto con tabulacion
+print(texto_tab)
+
+texto_borrado = "coca" + "\r" + lugar #Borra lo anterior 
+print(texto_borrado)
