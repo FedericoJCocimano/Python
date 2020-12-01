@@ -19,3 +19,15 @@ num2 %= 2 #num2 = num2 % 2
 num1 = 1 + num1 #PI
 num2 = 1 - num2 #PD
 
+'''
+Operadores de comparacion
+
+==Igual que
+!= Diferente que
+< Menor a
+> Mayor a
+<= Menor o igual que
+>= Mayor o igual que
+
+'''
+
