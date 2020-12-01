@@ -28,6 +28,12 @@ Operadores de comparacion
 > Mayor a
 <= Menor o igual que
 >= Mayor o igual que
-
 '''
 
+'''
+Operadores logicos
+and Y
+or O
+! Negacion
+not No
+'''
