@@ -17,7 +17,6 @@ todos los numeros pares del 1 al 120.
 '''
 
 def ejercicio2():
-    x = 1
     num_pares = []
     for x in range(1, 121):
         if x % 2 == 0:
