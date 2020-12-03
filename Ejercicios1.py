@@ -31,6 +31,27 @@ los 60 primeros numeros naturales. Resolverlo con for o while.
 def ejercicio3():
     for x in range(1, 61):
         print(f"{x} * {x} = {x*x}")
+        
+'''
+Ejercicio 4: Pedir dos números al usuario y hacer todas las operaciones
+básicas de una calculador y mostrarlo por pantalla.
+'''
+
+def ejercicio4():
+    n1 = int(input("Ingrese el primer número: "))
+    n2 = int(input("Ingrese el segundo número: "))
+
+    suma = n1 + n2
+    resta1 = n1 - n2
+    resta2 = n2 - n1
+    multiplicación = n1 * n2
+    división1 = n1 / n2
+    división2 = n2 / n1
+    resto1 = n1 % n2
+    resto2 = n2 % n1
+
+    print("Suma:", suma,"\nResta1:", resta1,"\nResta2:", resta2,"\nMultiplicación:", multiplicación)
+    print("División1:", división1,"\nDivisión2:", división2,"\nResto1:", resto1,"\nResto2:", resto2)
 
 
 
