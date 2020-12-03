@@ -54,4 +54,23 @@ def ejercicio4():
     print("División1:", división1,"\nDivisión2:", división2,"\nResto1:", resto1,"\nResto2:", resto2)
 
 
+'''
+Ejercicio 5: Hacer un programa que muestre todos los numeros
+entre dos numeros que especifique el usuario.
+'''
+
+def ejercicio5():
+    a = int(input("Ingrese el primer numero: "))
+    b = int(input("Ingrese el segundo numero: "))
+    if a < b:
+        a += 1
+        for i in range(a, b):
+            print(i)
+    elif a > b:
+        b += 1
+        for i in range(b, a):
+            print(i)
+    else:
+        print("No pueden ser los mismos numeros")
+
 
