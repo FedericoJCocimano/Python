@@ -24,7 +24,7 @@ def ejercicio2():
     print("Los numeros pares son: ", num_pares)
 
 '''
-Ejercicio 3 = Escribir un programa que muestre los cuadrados de
+Ejercicio 3: Escribir un programa que muestre los cuadrados de
 los 60 primeros numeros naturales. Resolverlo con for o while.
 '''
 
