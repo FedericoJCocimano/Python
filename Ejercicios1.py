@@ -23,6 +23,14 @@ def ejercicio2():
             num_pares.append(x)
     print("Los numeros pares son: ", num_pares)
 
-ejercicio2()
+'''
+Ejercicio 3 = Escribir un programa que muestre los cuadrados de
+los 60 primeros numeros naturales. Resolverlo con for o while.
+'''
+
+def ejercicio3():
+    for x in range(1, 61):
+        print(f"{x} * {x} = {x*x}")
+
 
 
