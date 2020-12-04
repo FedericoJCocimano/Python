@@ -72,5 +72,17 @@ def ejercicio5():
             print(i)
     else:
         print("No pueden ser los mismos numeros")
+        
+'''
+Ejercicio 6: Mostrar todas las tablas de multiplicar del 1 al 10; que se 
+muestre el titulo de la tabla y multiplicaciones del 1 al 10.
+'''
 
+def ejercicio6():
+    c = 1
+    while c != 11:
+        print("Tabla de multiplicar del: ", c)
+        for x in range(1, 11):
+            print(f"{x} * {c} = {x*c}")
+        c += 1
 
