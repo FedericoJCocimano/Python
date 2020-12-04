@@ -61,14 +61,20 @@ entre dos números que especifique el usuario.
 def ejercicio5():
     a = int(input("Ingrese el primer número: "))
     b = int(input("Ingrese el segundo número: "))
+    ab = a - b
+    ba = b - a
     if a < b:
         a += 1
         for i in range(a, b):
             print(i)
+        if ab == 1 or ba == 1:
+            print("No hay números enteros entre ambos, son contiguos")
     elif a > b:
         b += 1
         for i in range(b, a):
             print(i)
+        if ab == 1 or ba == 1:
+            print("No hay números enteros entre ambos, son contiguos")
     else:
         print("No pueden ser los mismos números")
 
@@ -94,11 +100,15 @@ def ejercicio7():
     n1 = int(input("Ingrese el primer número:"))
     n2 = int(input("Ingrese el segundo número:"))
     if n1 < n2:
+        if n1 - n2 == 1 or n2 - n1 == 1:
+            print("No hay números enteros entre ambos, son contiguos")
         n1 += 1
         for i in range(n1, n2):
             if i % 2 != 0:
                 print(i)
     elif n1 > n2:
+        if n1 - n2 == 1 or n2 - n1 == 1:
+            print("No hay números enteros entre ambos, son contiguos")
         n2 += 1
         for i in range(n2, n1):
             if i % 2 != 0:
@@ -129,3 +139,45 @@ def ejercicio9():
             print("Hasta luego!!")
         else:
             print(num)
+
+'''
+Ejercicio 10: El programa tiene que pedir la nota de 15 alumnos y que diga
+cuántos alumnos han aprobado y cuántos han reprobado.
+'''
+
+def ejercicio10():
+    c = 1
+    aprobados = 0
+    reprobados = 0
+    while c <= 15:
+        nota = int(input("Ingrese la nota: "))
+        if nota > 5:
+            aprobados = aprobados + 1
+            c += 1 
+        elif nota <= 5:
+            reprobados = reprobados + 1
+            c += 1
+    print("Cantidad de alumnos aprobados: ", aprobados)
+    print("Cantidad de alumnos reprobados: ", reprobados)
+
+ejercicio = int(input("Elija el ejercicio que desea realizar(1 al 10): "))
+if ejercicio == 1:
+    ejercicio1()
+elif ejercicio == 2:
+    ejercicio2()
+elif ejercicio == 3:
+    ejercicio3()
+elif ejercicio == 4:
+    ejercicio4()
+elif ejercicio == 5:
+    ejercicio5()
+elif ejercicio == 6:
+    ejercicio6()
+elif ejercicio == 7:
+    ejercicio7()
+elif ejercicio == 8:
+    ejercicio8()
+elif ejercicio == 9:
+    ejercicio9()
+elif ejercicio == 10:
+    ejercicio10()
