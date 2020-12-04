@@ -116,3 +116,16 @@ def ejercicio8():
     operacion = num * (porcentaje/100)
     print(f"El {porcentaje}% de {num} es igual a: {operacion}")
 
+'''
+Ejercicio9: Hacer un programa que pida números al usuario 
+indefinidamente hasta elegir el número 111.
+'''
+
+def ejercicio9():
+    num = int
+    while num != 111:
+        num = int(input("Ingrese un número(111 para finalizar): "))
+        if num == 111:
+            print("Hasta luego!!")
+        else:
+            print(num)
